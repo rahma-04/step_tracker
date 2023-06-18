@@ -11,9 +11,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Step Counter App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: StepTrackerPage(),
     );
   }

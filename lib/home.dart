@@ -77,9 +77,17 @@ class _StepTrackerPageState extends State<StepTrackerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Step Tracker'),
-        backgroundColor: Color(0xff00b2ca),
+            appBar: AppBar(
+        title: Text(
+          'Step Tracker',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'Roboto', // Ganti dengan font yang diinginkan
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Color.fromARGB(255, 149, 219, 254),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -103,7 +111,7 @@ class _StepTrackerPageState extends State<StepTrackerPage> {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                              Color(0xff00b2ca),
+                              Color.fromARGB(255, 149, 219, 254),
                               Color.fromARGB(255, 211, 248, 255),
                             ],
                           ),
@@ -157,7 +165,7 @@ class _StepTrackerPageState extends State<StepTrackerPage> {
                               style: TextStyle(fontSize: 16),
                               decoration: InputDecoration(
                                 filled: true,
-                                fillColor: Color.fromARGB(255, 224, 242, 246),
+                                fillColor: Color.fromARGB(255, 214, 236, 248),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
@@ -187,7 +195,7 @@ class _StepTrackerPageState extends State<StepTrackerPage> {
                               style: TextStyle(fontSize: 16),
                               decoration: InputDecoration(
                                 filled: true,
-                                fillColor: Color.fromARGB(255, 224, 242, 246),
+                                fillColor: Color.fromARGB(255, 214, 236, 248),
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
@@ -201,7 +209,7 @@ class _StepTrackerPageState extends State<StepTrackerPage> {
                   SizedBox(height: 24),
                   Container(
                     padding: EdgeInsets.all(16.0),
-                    color: Color(0xfffbd1a2),
+                    color: Color.fromARGB(255, 175, 221, 244),
                     child: Text(
                       '${stopwatch.elapsed.inHours.toString().padLeft(2, '0')}:${(stopwatch.elapsed.inMinutes % 60).toString().padLeft(2, '0')}:${(stopwatch.elapsed.inSeconds % 60).toString().padLeft(2, '0')}',
                       style: TextStyle(fontSize: 24),
@@ -219,7 +227,7 @@ class _StepTrackerPageState extends State<StepTrackerPage> {
                             begin: Alignment.topCenter,
                             end: Alignment.bottomCenter,
                             colors: [
-                              Color(0xFF7dcfb6), // #f79256
+                              Color(0xFF7dcfb6),
                               Colors.white,
                             ],
                           ),
@@ -285,7 +293,7 @@ class _StepTrackerPageState extends State<StepTrackerPage> {
                       ElevatedButton(
                         onPressed: startTimer,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xfffcbf49),
+                          backgroundColor: Color(0xFF7dcfb6),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8.0),
                           ),
@@ -300,7 +308,7 @@ class _StepTrackerPageState extends State<StepTrackerPage> {
                       ElevatedButton(
                         onPressed: stopTimer,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromARGB(255, 114, 215, 232),
+                          backgroundColor: Color(0xFF7dcfb6),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8.0),
                           ),
@@ -315,7 +323,7 @@ class _StepTrackerPageState extends State<StepTrackerPage> {
                       ElevatedButton(
                         onPressed: resetStepCount,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xffd62828),
+                          backgroundColor: Color(0xFFF79256),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(8.0),
                           ),
