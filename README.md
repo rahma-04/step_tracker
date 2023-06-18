@@ -1,5 +1,3 @@
-Berikut ini adalah contoh isi berkas README.txt untuk aplikasi Step Tracker:
-
 # Step Tracker App
 
 Step Tracker adalah aplikasi yang digunakan untuk menghitung langkah, jarak total, dan kalori yang terbakar berdasarkan langkah yang diambil oleh pengguna. Aplikasi ini dikembangkan menggunakan Flutter.
